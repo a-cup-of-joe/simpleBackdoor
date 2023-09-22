@@ -1,0 +1,17 @@
+attack_label_trans: all2one
+attack_target: 0
+client_optimizer: adam
+dataset: cifar10
+dataset_path: ../data
+frequency_save: 5
+batch_size: 512
+lr: 0.0003
+lr_scheduler: CosineAnnealingLR
+model: resnet20
+pratio: 0.15
+random_seed: 0
+wd: 0.0005
+patch_mask_path: resources/badnet/trigger_image.png
+epochs: 5
+data_type: image
+attack_name: badnet
